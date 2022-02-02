@@ -9,7 +9,8 @@ const prodConfig = {
   mode: 'production',
   entry: './src/story.js',
   output: {
-    filename: '[name].[contenthash].js'
+    filename: '[name].[contenthash].js',
+    publicPath: '/container/latest/'
   },
   plugins: [
     new ModuleFederationPlugin({

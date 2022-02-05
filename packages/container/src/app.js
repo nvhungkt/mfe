@@ -1,6 +1,6 @@
 import React, { lazy, Suspense, useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { StylesProvider, createGenerateClassName } from '@material-ui/core';
+import { StylesProvider, createGenerateClassName } from '@material-ui/core/styles';
 
 const MarketingLazy = lazy(() => import('./components/MarketingApp'));
 const AuthLazy = lazy(() => import('./components/AuthApp'));

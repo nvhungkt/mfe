@@ -1,6 +1,6 @@
-const marketingApp = import('./index');
+const authApp = import('./index');
 
-marketingApp.then(({ mount }) => {
+authApp.then(({ mount }) => {
   const el = document.querySelector('#auth-root');
-  mount(el, { shouldUseBrowserHistory: true });
+  mount(el, { shouldUseBrowserHistory: true, initialLocation: { pathname: '/auth/signin' } });
 });
